@@ -1,5 +1,15 @@
-make-activity
-=============
+---
+title: "STAT545 HW09 Makefile"
+output:
+  html_document:
+    keep_md: yes
+---
+
+This repo is for STAT545 homework 09 makefile activity by Minzhi Liao.
+
+The whole project is built by this (Makefile)[https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/Makefile].
+
+For those who are interested, I also commit once when the whole project is built up. So if you want to see that, the link is here: (hw09-liao02x)[https://github.com/STAT545-UBC-students/hw09-liao02x].
 
 The commit history of this repository reflects what a student might do as she works through [this activity](http://stat545-ubc.github.io/automation04_make-activity.html) from [STAT 545](http://stat545-ubc.github.io). This fully developed example shows:
 
