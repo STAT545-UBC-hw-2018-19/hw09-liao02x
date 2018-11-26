@@ -1,5 +1,5 @@
 ---
-title: "English Word lengths"
+title: "English Words Further Explore"
 author: "Minzhi Liao"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
