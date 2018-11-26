@@ -7,9 +7,10 @@ output:
 
 This repo is for STAT545 homework 09 makefile activity by Minzhi Liao.
 
-The whole project is built by this (Makefile)[https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/Makefile].
+The whole project is built by this [Makefile](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/Makefile).
 
-For those who are interested, I also commit once when the whole project is built up. So if you want to see that, the link is here: (hw09-liao02x)[https://github.com/STAT545-UBC-students/hw09-liao02x].
+For those who are interested, I also commit once when the whole project is built up. So if you want to see that, the link is here: 
+[hw09-liao02x](https://github.com/STAT545-UBC-students/hw09-liao02x/tree/f614331539f51d087276e763cd29a7bcbe0cd44b).
 
 ## How to build the project
 You can build the whole project by simply run:
@@ -24,17 +25,17 @@ But you'll need R and python with all dependent packages to actually run through
 
 ## The structure of this repo
 
-The R script files are in (R)[https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/R], 
-and I also use python script in (python)[https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/python] to visualize Makefile.
+The R script files are in [R](https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/R), 
+and I also use python script in [python](https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/python) to visualize Makefile.
 The structure is shown below:
-  * (R)[https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/R]
-    - (histogram.R)[]: origin file
-    - (letter_freq.R)[]: R script for calculating letter frequency
-    - (letter_head.R)[]: R script for calculating head letter frequency
-    - (letter_tail.R)[]: R script for calculating tail letter frequency
-    - (visualize_makefile.R)[]: R script for visualize Makefile somehow with R
-  * (python)[https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/python]
-    - (makefile2dot.py)[]: modified from (here)[] to assign different color for different file type
-  * (report.Rmd)[]: origin file
-  * (report2.Rmd)[]: additional report for further analysis on the `words.txt`
-  * (README.Rmd)[]: building `README.md` file for this repo
+  * [R](https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/R)
+    - [histogram.R](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/R/histogram.R): origin file
+    - [letter_freq.R](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/R/letter_freq.R): R script for calculating letter frequency
+    - [letter_head.R](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/R/letter_head.R): R script for calculating head letter frequency
+    - [letter_tail.R](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/R/letter_tail.R): R script for calculating tail letter frequency
+    - [visualize_makefile.R](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/R/visual_makefile.R): R script for visualize Makefile somehow with R
+  * [python](https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/python)
+    - [makefile2dot.py](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/python/makefile2dot.py): modified from [here]() to assign different color for different file type
+  * [report.Rmd](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/report.rmd): origin file
+  * [report2.Rmd](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/report2.Rmd): additional report for further analysis on the `words.txt`
+  * [README.Rmd](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/README.Rmd): building `README.md` file for this repo
