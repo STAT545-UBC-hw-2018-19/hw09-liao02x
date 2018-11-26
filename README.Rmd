@@ -11,17 +11,30 @@ The whole project is built by this (Makefile)[https://github.com/STAT545-UBC-stu
 
 For those who are interested, I also commit once when the whole project is built up. So if you want to see that, the link is here: (hw09-liao02x)[https://github.com/STAT545-UBC-students/hw09-liao02x].
 
-The commit history of this repository reflects what a student might do as she works through [this activity](http://stat545-ubc.github.io/automation04_make-activity.html) from [STAT 545](http://stat545-ubc.github.io). This fully developed example shows:
+## How to build the project
+You can build the whole project by simply run:
 
-  * How to run an R script non-interactively
-  * How to use `make`
-    - to record which files are inputs vs. intermediates vs. outputs
-    - to capture how scripts and commands convert inputs to outputs
-    - to re-run parts of an analysis that are out-of-date
-  * The intersection of R and `make`, i.e. how to
-    - run snippets of R code
-    - run an entire R script
-    - render an R Markdown document (or R script)
-  * The interface between RStudio and `make`
-  * How to use `make` from the shell
-  * How Git facilitates the process of building a pipeline
+```
+make all
+```
+
+But you'll need R and python with all dependent packages to actually run through the building process.
+
+**Also notice that for running on windows, I modified Makefile in some ways like change `rm -f` to `del /s /q`, so it is only available on windows now.**
+
+## The structure of this repo
+
+The R script files are in (R)[https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/R], 
+and I also use python script in (python)[https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/python] to visualize Makefile.
+The structure is shown below:
+  * (R)[https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/R]
+    - (histogram.R)[]: origin file
+    - (letter_freq.R)[]: R script for calculating letter frequency
+    - (letter_head.R)[]: R script for calculating head letter frequency
+    - (letter_tail.R)[]: R script for calculating tail letter frequency
+    - (visualize_makefile.R)[]: R script for visualize Makefile somehow with R
+  * (python)[https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/python]
+    - (makefile2dot.py)[]: modified from (here)[] to assign different color for different file type
+  * (report.Rmd)[]: origin file
+  * (report2.Rmd)[]: additional report for further analysis on the `words.txt`
+  * (README.Rmd)[]: building `README.md` file for this repo
