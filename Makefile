@@ -11,7 +11,7 @@ all: part1 part2 part3 README.md
 clean:
 	del /s /q *.txt *.tsv *.png *.html *.md *.pdf
 
-part1: report.html
+part1: report.html #Origin report part
 
 report.html: report.rmd histogram.tsv histogram.png
 	Rscript -e 'rmarkdown::render("$<")'
@@ -27,7 +27,7 @@ words.txt:
 	Rscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", \
 														destfile = "raw/$@", quiet = TRUE)'
 
-part2: report2.html
+part2: report2.html #My report part
 
 letter_freq.tsv: letter_freq.R words.txt
 	Rscript $< raw/$(word 2,$^) data/$@
@@ -50,11 +50,12 @@ letter_tail.png: letter_tail.tsv
 	Rscript -e 'library(ggplot2); qplot(tail, Freq, data=read.delim("data/$<")); ggsave("img/$@")'
 	del /s /q Rplots.pdf
 
-report2.html: report2.rmd letter_freq.tsv letter_head.tsv letter_tail.tsv letter_freq.png letter_head.png letter_tail.png
+report2.html: report2.rmd letter_freq.tsv letter_head.tsv letter_tail.tsv \
+			  letter_freq.png letter_head.png letter_tail.png
 	Rscript -e 'rmarkdown::render("$<")'
 
 
-part3: dependencyplot.png dependencyplotR.png
+part3: dependencyplot.png dependencyplotR.png #Visualization
 
 dependencyplotR.png: visual_makefile.R Makefile
 	Rscript $< img/$@
@@ -64,4 +65,5 @@ dependencyplot.png: makefile2dot.py
 
 README.md: README.Rmd
 	Rscript -e 'rmarkdown::render("$<")'
+	del /s /q README.html
 

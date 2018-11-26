@@ -12,6 +12,9 @@ The whole project is built by this [Makefile](https://github.com/STAT545-UBC-stu
 For those who are interested, I also commit once when the whole project is built up. So if you want to see that, the link is here: 
 [hw09-liao02x](https://github.com/STAT545-UBC-students/hw09-liao02x/tree/ea95fbfc3714ec508a9ad8134da03d8e0b3d82b5).
 
+The rendered html outputs of the project are here: [report.html](https://raw.githack.com/STAT545-UBC-students/hw09-liao02x/master/report.html) and 
+[report2.html](https://raw.githack.com/STAT545-UBC-students/hw09-liao02x/master/report2.html).
+
 ## How to build the project
 You can build the whole project by simply run:
 
@@ -36,9 +39,6 @@ Also I tried some visualization myself with R package `igraph`, but the layout o
 ![](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/img/dependencyplotR.png)
 
 ## The structure of this repo
-
-The reports of the project is here: [report.html](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/report.html) and 
-[report2.html](https://github.com/STAT545-UBC-students/hw09-liao02x/blob/master/report2.html).
 
 The R script files are in [R](https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/R), 
 and I also use python script in [python](https://github.com/STAT545-UBC-students/hw09-liao02x/tree/master/python) to visualize Makefile.
