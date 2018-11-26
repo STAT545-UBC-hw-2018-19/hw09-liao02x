@@ -60,8 +60,8 @@ part3: dependencyplot.png dependencyplotR.png #Visualization
 dependencyplotR.png: visual_makefile.R Makefile
 	Rscript $< img/$@
 	
-dependencyplot.png: makefile2dot.py
-	python $< <Makefile |dot -Tpng > img/$@
+dependencyplot.png: makefile2dot.py Makefile
+	python $< <$(word 2,$^) |dot -Tpng > img/$@
 
 README.md: README.Rmd
 	Rscript -e 'rmarkdown::render("$<")'
